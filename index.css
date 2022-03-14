@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@600&family=Sansita+Swashed:wght@300&family=Varela+Round&display=swap");
+
+header{
+    /* padding: 0 20rem;     */
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+nav{
+    height: 7rem;
+    color: #fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0 20rem;
+}
+.logo-section,.btn-section{
+    margin-top: 2rem;
+}
+.logo-section{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+.btn-section button{
+    text-transform: uppercase;
+    background: none;
+    border: .3rem solid rgb(134, 19, 19);
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.btn-section:hover{
+    transform: translateY(-.5rem);
+    transition: all 1s linear;
+}
+header::before{
+       content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 7rem;
+    background-image: url('images/1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header::after{
+       content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 7rem;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.7;
+}
+.main{
+    margin-top: 15rem;
+    margin-left: 5rem;
+    /* border: .2rem solid; */
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 12rem;
+}
+
+figure{
+    /* border: .2rem solid; */
+    box-shadow: 0 .7rem .5rem .1rem black;
+    height: 35rem;
+    width: 30rem;
+    position: relative;
+}
+figure img{
+    height: 100%;
+    width: 100%;
+}
+figure::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+}
+figcaption{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+figure:hover:before{
+    opacity: 0.5;
+    transition: all 1s;
+}
